@@ -134,8 +134,12 @@ the result is:<br>
 the number of times a word appears in a document divided by the total number of words in the document. Every document has its own term frequency.
 there are two ways to calculate term frequency:
 1. raw term frequency: the number of times a word appears in a document. formula: tf(t,d) = number of times term t appears in document d.
-2. normalized term frequency: the number of times a word appears in a document divided by a criteria that we choose. like division by the maximum number of times a word appears in a document. formula: tf(t,d) = (number of times term t appears in document d) / (maximum number of times any term appears in document d).
+2. normalized term frequency: the number of times a word appears in a document divided by a criteria that we choose. like division by the maximum number of times a word appears in a document. formula: latex: tf(t,d) = \frac{number of times term t appears in document d}{maximum number of times any term appears in document d}
 
 ### inverse document frequency
 the logarithm of the number of documents divided by the number of documents that contain the word w. Every word has its own inverse document frequency.
 formula: latex: idf(t,D) = log_e(\frac{|D|}{|{d \in D: t \in d}|})
+
+### tf-idf
+the product of term frequency and inverse document frequency. Every word has its own tf-idf.
+formula: latex: tfidf(t,d,D) = tf(t,d) \times idf(t,D)
