@@ -10,23 +10,23 @@ The algorithm is as follows:
 
 ### Example
 Let's assume we have the following data:
-+-------------+----------+----------+------+
-| Temperature | Humidity | Wind     | Play |
-+-------------+----------+----------+------+
-|   Hot       |   High   | Weak     | No   |
-|   Hot       |   High   | Strong   | No   |
-|  Overcast   |   High   | Weak     | Yes  |
-|   Rain      |  Normal  | Weak     | Yes  |
-|   Rain      |    Low   | Weak     | Yes  |
-|   Rain      |    Low   | Strong   | No   |
-|  Overcast   |    Low   | Strong   | Yes  |
-|   Hot       |  Normal  | Weak     | No   |
-|   Hot       |    Low   | Weak     | Yes  |
-|   Rain      |  Normal  | Weak     | Yes  |
-|   Hot       |  Normal  | Strong   | Yes  |
-|  Overcast   |  Normal  | Strong   | Yes  |
-|  Overcast   |   High   | Weak     | Yes  |
-|   Rain      |  Normal  | Strong   | No   |
++-------------+----------+----------+------+<br>
+| Temperature | Humidity | Wind     | Play |<br>
++-------------+----------+----------+------+<br>
+|   Hot       |   High   | Weak     | No   |<br>
+|   Hot       |   High   | Strong   | No   |<br>
+|  Overcast   |   High   | Weak     | Yes  |<br>
+|   Rain      |  Normal  | Weak     | Yes  |<br>
+|   Rain      |    Low   | Weak     | Yes  |<br>
+|   Rain      |    Low   | Strong   | No   |<br>
+|  Overcast   |    Low   | Strong   | Yes  |<br>
+|   Hot       |  Normal  | Weak     | No   |<br>
+|   Hot       |    Low   | Weak     | Yes  |<br>
+|   Rain      |  Normal  | Weak     | Yes  |<br>
+|   Hot       |  Normal  | Strong   | Yes  |<br>
+|  Overcast   |  Normal  | Strong   | Yes  |<br>
+|  Overcast   |   High   | Weak     | Yes  |<br>
+|   Rain      |  Normal  | Strong   | No   |<br>
 +-------------+----------+----------+------+
 
 
