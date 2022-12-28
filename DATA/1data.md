@@ -133,13 +133,13 @@ the result is:<br>
 ### term frequency
 the number of times a word appears in a document divided by the total number of words in the document. Every document has its own term frequency.
 there are two ways to calculate term frequency:
-1. raw term frequency: the number of times a word appears in a document. formula: ![]{https://latex.codecogs.com/gif.latex?tf(t,D)&space;=&space;apperance&space;of&space;term&space;t&space;in&space;document&space;D}
-2. normalized term frequency: the number of times a word appears in a document divided by a criteria that we choose. like division by the maximum number of times a word appears in a document. formula: ![]{https://latex.codecogs.com/gif.latex?tf(t,D)&space;=&space;\frac{apperance&space;of&space;term&space;t&space;in&space;document&space;D}{max&space;apperance&space;of&space;any&space;term&space;in&space;document&space;D}}
+1. raw term frequency: the number of times a word appears in a document. formula: ![](https://latex.codecogs.com/gif.latex?tf(t,D)&space;=&space;apperance&space;of&space;term&space;t&space;in&space;document&space;D)
+2. normalized term frequency: the number of times a word appears in a document divided by a criteria that we choose. like division by the maximum number of times a word appears in a document. formula: ![](https://latex.codecogs.com/gif.latex?tf(t,D)&space;=&space;\frac{apperance&space;of&space;term&space;t&space;in&space;document&space;D}{max&space;apperance&space;of&space;any&space;term&space;in&space;document&space;D})
 
 ### inverse document frequency
 the logarithm of the number of documents divided by the number of documents that contain the word w. Every word has its own inverse document frequency.
-formula: ![]{https://latex.codecogs.com/gif.latex?idf(t,D)&space;=&space;\log&space;\frac{N}{|\{d&space;\in&space;D:&space;t&space;\in&space;d\}|}
+formula: ![](https://latex.codecogs.com/gif.latex?idf(t,D)&space;=&space;\log&space;\frac{N}{|\{d&space;\in&space;D:&space;t&space;\in&space;d\}|)
 
 ### tf-idf
 the product of term frequency and inverse document frequency. Every word has its own tf-idf.
-formula: ![]{https://latex.codecogs.com/gif.latex?tfidf(t,d,D)&space;=&space;tf(t,d)&space;\times&space;idf(t,D)}
+formula: ![](https://latex.codecogs.com/gif.latex?tfidf(t,d,D)&space;=&space;tf(t,d)&space;\times&space;idf(t,D))
