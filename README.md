@@ -5,9 +5,9 @@ this project contains the following content:
 * DATA preprocessing
 * Algorithms
     * One Rule
-    * Decision Tree
-    * Naive Bayes
     * KNN
+    * Naive Bayes
+    * Decision Tree
     * K-means
     * association rules
 * Evaluation
