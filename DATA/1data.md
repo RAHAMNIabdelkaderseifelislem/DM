@@ -100,3 +100,31 @@ tfidf = vectorizer.fit_transform(text)
 print(tfidf.toarray())
 print(vectorizer.get_feature_names())
 ```
+
+now we can plot the tf-idf of each word in the text.
+
+```python
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud
+
+# creating wordcloud object
+wordcloud = WordCloud().generate_from_frequencies(vectorizer.vocabulary_)
+# plotting wordcloud
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
+plt.show()
+```
+the result is:<br>
+![](Figure_2.png)
+
+or we can plot the tf-idf with the help of seaborn.
+
+```python
+import seaborn as sns
+
+# plotting heatmap
+sns.heatmap(tfidf.toarray(), annot=True, xticklabels=vectorizer.get_feature_names(), yticklabels=['text1', 'text2'])
+plt.show()
+```
+the result is:<br>
+![](Figure_3.png)
