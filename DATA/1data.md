@@ -138,7 +138,7 @@ there are two ways to calculate term frequency:
 
 ### inverse document frequency
 the logarithm of the number of documents divided by the number of documents that contain the word w. Every word has its own inverse document frequency.
-formula: latex: idf(t,D) = log_e(\frac{|D|}{|{d \in D: t \in d}|})
+formula: [latex: idf(t,D) = \log \frac{number of documents}{number of documents with term t in it}]
 
 ### tf-idf
 the product of term frequency and inverse document frequency. Every word has its own tf-idf.
