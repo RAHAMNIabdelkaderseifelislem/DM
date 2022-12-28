@@ -71,3 +71,17 @@ text = preprocess_text(text)
 print(text)
 ```
 
+now we have a clean text data, we can use it to do some analysis. for example, we can use wordcloud to visualize the most frequent words in the text.
+
+```python
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
+text = ' '.join(text)
+wordcloud = WordCloud().generate(text)
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
+plt.show()
+```
+the result is:
+![](Figure_1.png)

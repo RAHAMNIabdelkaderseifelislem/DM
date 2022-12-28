@@ -44,3 +44,13 @@ def preprocess(text):
 text = 'I am a student number 25992.#@14 I am learning data mining. I am lea5899rning natural language processing.'
 text = preprocess(text)
 print(text)
+
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
+text = ' '.join(text)
+wordcloud = WordCloud().generate(text)
+print(wordcloud)
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
+plt.show()
