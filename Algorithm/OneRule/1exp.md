@@ -3,11 +3,9 @@ is a supervised algorithm that's used to classify data into two or more classes.
 
 The algorithm is as follows:
 
-1. For each attribute, calculate the entropy of the data.
-2. Choose the attribute with the lowest entropy.
-3. Use this attribute to create the decision rule.
-4. Repeat steps 1-3 for each possible value of the chosen attribute.
-
+1. For each attribute, calculate the error rate.
+2. Choose the attribute with the lowest error rate.
+3. The decision rule is the attribute with the lowest error rate.
 ### Example
 Let's assume we have the following data:
 <code>
@@ -29,4 +27,12 @@ Let's assume we have the following data:
 |  Overcast   |   High   | Weak     | Yes  |
 |   Rain      |  Normal  | Strong   | No   |
 +-------------+----------+----------+------+
+</code>
+
+<br>
+now we can calculate the error rate for each attribute:
+<br>
+<br> the error rate for the attribute **Temperature** is:
+<code style={background : #fff;}>
+![](https://latex.codecogs.com/gif.latex?E%28Temperature%29%20%3D%20%5Cfrac%7B3%7D%7B5%7D%20&plus;%20%5Cfrac%7B2%7D%7B9%7D%20%3D%200.56)
 </code>
