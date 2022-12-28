@@ -88,3 +88,7 @@ for attribute in attributes:
 decision_rule = attributes[error_rates.index(min(error_rates))]
 print('The decision rule is:', decision_rule)
 ```
+result:
+```
+The decision rule is: color
+```
