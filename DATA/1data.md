@@ -85,3 +85,18 @@ plt.show()
 ```
 the result is:<br>
 ![](Figure_1.png)
+## use of TF-IDF to extract keywords
+TF-IDF is a statistical measure that evaluates how relevant a word is to a document in a collection of documents. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus. TF-IDF is one of the most popular term-weighting schemes today; 83% of text-based recommender systems in digital libraries use TF-IDF.
+
+### example
+```python
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+text = ['I am a student. I am learning data mining. I am learning natural language processing.',
+        'I am a student. I am learning data mining. I am learning natural language processing.']
+
+vectorizer = TfidfVectorizer()
+tfidf = vectorizer.fit_transform(text)
+print(tfidf.toarray())
+print(vectorizer.get_feature_names())
+```
