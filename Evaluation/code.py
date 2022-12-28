@@ -27,7 +27,7 @@ accuracy1 = accuracy(actual, predicted1)
 predicted2 = [1, 1, 0, 1, 0, 0, 2, 2, 1, 3, 3, 3]
 accuracy2 = accuracy(actual, predicted2)
 
-predicted3 = [1, 1, 0, 1, 0, 0, 2, 2, 1, 3, 3, 2]
+predicted3 = [1, 1, 0, 1, 0, 0, 2, 2, 1, 3, 2, 2]
 accuracy3 = accuracy(actual, predicted3)
 
 print('Accuracy1: %.2f%%' % accuracy1)
