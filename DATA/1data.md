@@ -83,5 +83,5 @@ plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis("off")
 plt.show()
 ```
-the result is:
+the result is:<br>
 ![](Figure_1.png)
