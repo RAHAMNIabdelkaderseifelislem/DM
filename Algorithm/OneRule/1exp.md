@@ -33,4 +33,4 @@ Let's assume we have the following data:
 now we can calculate the error rate for each attribute:
 <br>
 <br> the error rate for the attribute **Temperature** is:
-![](https://latex.codecogs.com/gif.latex?E%28Temperature%29%20%3D%20%5Cfrac%7B3%7D%7B5%7D%20&plus;%20%5Cfrac%7B2%7D%7B9%7D%20%3D%200.56)
+!(https://latex.codecogs.com/gif.latex?E%28Temperature%29%20%3D%20%5Cfrac%7B3%7D%7B5%7D%20&plus;%20%5Cfrac%7B2%7D%7B9%7D%20%3D%200.56)
