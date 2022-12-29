@@ -146,7 +146,7 @@ tf(t,D) = \frac{apperance of term t in document D}{max apperance of any term in 
 the logarithm of the number of documents divided by the number of documents that contain the word w. Every word has its own inverse document frequency.
 formula:
 ```math	
-idf(t,D) = \log \frac{N}{|\{d \in D: t \in d\}|
+idf(t,D) = \log{ \frac{N}{|\{d \in D: t \in d\}|}
 ```
 
 ### tf-idf
