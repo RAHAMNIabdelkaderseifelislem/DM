@@ -1,5 +1,22 @@
 ## Evaluation of a DATA MINING Algorithm
-is a process of comparing the performance of a DATA MINING algorithm by calculating the  accuracy of the algorithm on a given dataset. The accuracy is calculated by comparing the predicted values of the algorithm with the actual values of the dataset. The accuracy is calculated by using the following formula:![](https://latex.codecogs.com/gif.latex?Accuracy=\frac{TP&plus;TN}{TP&plus;TN&plus;FP&plus;FN})where: - TP is the number of true positives - TN is the number of true negatives - FP is the number of false positives - FN is the number of false negatives
+is a process of comparing the performance of a DATA MINING algorithm by calculating the  accuracy of the algorithm on a given dataset. The accuracy is calculated by comparing the predicted values of the algorithm with the actual values of the dataset. The accuracy is calculated by using the following formula:
+```math
+Accuracy=\frac{TP+TN}{TP+TN+FP+FN}
+```
+where:
+- TP is the number of true positives
+- TN is the number of true negatives
+- FP is the number of false positives
+- FN is the number of false negatives
+
+also we can calculate the precision of the algorithm by using the following formula:
+```math
+Precision=\frac{TP}{TP+FP}
+```
+and the recall of the algorithm by using the following formula:
+```math
+Recall=\frac{TP}{TP+FN}
+```
 ### Example
 Let's say we had the following results from a DATA MINING algorithm:
 
@@ -19,23 +36,29 @@ Let's say we had the following results from a DATA MINING algorithm:
 | 3      | 3         |
 | 3      | 3         |
 
-The accuracy is calculated by using the following formula:
-
-![](https://latex.codecogs.com/gif.latex?Accuracy=\frac{TP&plus;TN}{TP&plus;TN&plus;FP&plus;FN})
-
-where:
-
-- TP is the number of true positives
-- TN is the number of true negatives
-- FP is the number of false positives
-- FN is the number of false negatives
-
 The accuracy is calculated as follows:
 
-![](https://latex.codecogs.com/gif.latex?Accuracy=\frac{4&plus;4}{4&plus;4&plus;2&plus;2}=0.67)
+```math
+Accuracy=\frac{4+4}{4+4+2+2}=0.67
+```
 
 The accuracy of the algorithm is 67%.
 
+the precision is calculated as follows:
+
+```math
+Precision=\frac{4}{4+2}=0.67
+```
+
+The precision of the algorithm is 67%.
+
+the recall is calculated as follows:
+
+```math
+Recall=\frac{4}{4+2}=0.67
+```
+
+The recall of the algorithm is 67%.
 ### Implementation
 
 ```python	
